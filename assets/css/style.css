@@ -33,6 +33,63 @@
     
 }
 
+.legislacao-section{
+    padding: 100px 5%;
+    background-color: #ffffff;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.legislacao-grid {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: #ccc;
+    align-self: stretch;
+}
+
+.leg-colum {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.leg-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.law-tag {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.law-tag:hover {
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #0b3d2e;
+    text-align: center;
+}
+
 /* RESPONSIVIDADE PARA MOBILE*/
 @media (max-width: 768px) {
     .hero-section {
@@ -62,5 +119,13 @@
         flex-direction: column;
         gap: 15px;
         padding: 15px;
+    }
+
+    .legislacao-grid {
+        flex-direction: column;
+    }
+
+    .vertical-divider {
+        display: none;
     }
 }
