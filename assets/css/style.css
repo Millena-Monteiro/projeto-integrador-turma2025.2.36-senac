@@ -90,6 +90,93 @@
     text-align: center;
 }
 
+.maceio-section {
+    padding: 100px 5%;
+    background-color: #e0f5e7;
+}
+/*CONTAINER PRINCIPAL DA SEÇÃO*/
+.maceio-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.maceio-image-container {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    position: relative;
+}
+
+.maceio.img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.maceio-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #27ae60;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3);
+}
+
+.maceio-badge span {
+    font-size: 24px;
+    font-weight: 800;
+    display: block;
+}
+.maceio-content {
+    flex: 1;
+    min-width: 350px;
+}
+
+.maceio-title {
+    font-size: 2.8rem;
+    color: #0b3d2e;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.maceio-item {
+    margin-bottom: 30px;
+}
+
+.maceio-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.maceio-item p {
+    font-size: 1.05rem;
+    color: #666;
+    line-height: 1.7;
+}
+
+.maceio-item.highlight {
+    background-color: #f1f8f5;
+    padding: 20px;
+    border-left: 4px solid #27ae60;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
 /* RESPONSIVIDADE PARA MOBILE*/
 @media (max-width: 768px) {
     .hero-section {
@@ -127,5 +214,13 @@
 
     .vertical-divider {
         display: none;
+    }
+
+    .maceio-flex {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .maceio-badge {
+        right: 10px;
     }
 }
