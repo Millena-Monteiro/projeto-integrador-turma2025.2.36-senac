@@ -1,18 +1,20 @@
 function loadHeader(){
     fetch('/components/header.html')
-    .then(response => {
-        if (!response.ok){
-        throw new Error('Erro ao carregar o cabeçalho');
-    }
-    return response.text();
-    })
+    .then(response => response.text())
     .then(data => {
         document.getElementById('header-placeholder').innerHTML = data;
+
+        // Lógica do Clique
+        const btn = document.getElementById('hamburger');
+        const menu = document.getElementById('nav-menu');
+
+        if (btn && menu) {
+            btn.onclick = function() {
+                menu.classList.toggle('show');
+            };
+        }
     })
-    .catch(error => {
-            console.error('Erro:', error);
-        });
-    
+    .catch(error => console.log("Erro ao carregar menu"));
 }
 
 document.addEventListener('DOMContentLoaded', loadHeader);

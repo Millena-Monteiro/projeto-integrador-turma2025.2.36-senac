@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .hero-section {
     position:relative;
     height: 100vh;
@@ -33,6 +37,25 @@
     
 }
 
+/*HEADER BASE*/
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+
+/* SEÇÃO LEGISLAÇÃO*/
 .legislacao-section{
     padding: 100px 5%;
     background-color: #ffffff;
@@ -405,8 +428,90 @@
     transform: scale(1.05);
 }
 
-/* RESPONSIVIDADE TABLETS E CELULARES*/
-@media (max-width: 992px) {
+/*SEÇÃO SOBRE*/
+.info-section {
+    background-color: #011e11;
+    padding: 95px;
+    color: white;
+    overflow: hidden;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0 40px;
+}
+
+.info-text-box { flex: 1; }
+
+.info-title {
+    color: #12ff46;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.info-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.info-team { margin: 30px 0; }
+.info-team h3 { color: #12ff46; margin-bottom: 10px; font-size: 1.2rem; }
+
+.btn-contato {
+    background-color: #12ff46;
+    color: #000;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/*Formato da Imagem */
+.info-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-pill {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 150px;
+    overflow: hidden;
+    z-index: 2;
+    border: 2px solid rgba(18, 255, 70, 0.3);
+}
+
+.image-pill img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.glow-effect {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(18, 255, 70, 0.4) 0%, transparent 70%);
+    filter: blur(50px);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* RESPONSIVIDADE PARA CELULARES*/
+@media (max-width: 725px) {
     .hero-section {
         padding: 0 20px;
         justify-content: center;
@@ -430,12 +535,97 @@
         font-size: 12px;
     }
 
+    /* MENU MOBILE (SIDEBAR & HAMBURGER) */
+    /* Container Principal */
     .header-container {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
+        position: fixed;
+        justify-content: flex-start !important;
+        gap: 20px;
+        padding: 15px 4% !important;
+        z-index: 2000;
+        background-color: #103e3c;
     }
 
+    /* Botão (Sempre visível e clicável) */
+    .menu-hamburger {
+        display: flex !important;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 4000 !important;
+        position: relative;
+    }
+
+    .menu-hamburger span {
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        transition: 0.3s;
+    }
+
+    /* Logo Escondida via JS com a classe .hide-logo */
+    #main-logo {
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    #main-logo.hide-logo {
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+
+    /* O Menu Lateral Transparente*/
+    .navbar {
+        display: none !important; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 100vh;
+        
+        /* Design Transparente */
+        background: rgba(1, 30, 17, 0.95);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        
+        /* Alinhamento dos Links */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        z-index: 3000;
+    }
+
+    /* Classe Ativadora (Controlada pelo JS) */
+    .navbar.show {
+        display: flex !important;
+    }
+
+    /*Estilo dos Links */
+    .navbar a {
+        color: white !important;
+        font-size: 1.3rem;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar a:hover {
+        color: #12ff46 !important;
+    }
+
+    /* Bloqueio de scroll no fundo quando o menu abrir (precisa do JS) */
+    body.menu-active {
+        overflow: hidden;
+    }
+
+     /*SEÇÃO LEGISLAÇÃO*/
     .legislacao-grid {
         flex-direction: column;
     }
@@ -538,6 +728,42 @@
     
     .sucesso-main-title {
         font-size: 1.8rem;
+    }
+
+    /*SEÇÃO SOBRE*/
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-image-wrapper {
+        order: -1;
+    }
+    .image-pill {
+        height: 200px;
+    }
+    .info-title { font-size: 2.2rem; }
+}
+/* VERSÃO DESKTOP */
+@media (min-width: 993px) {
+    .header-container {
+        justify-content: space-between; /* Logo na esquerda, Nav na direita */
+    }
+
+    .menu-hamburger {
+        display: none; /* Some completamente no PC */
+    }
+
+    .navbar {
+        display: flex;
+        position: static; /* Volta para a posição normal do fluxo */
+        width: auto;
+        height: auto;
+        background: none;
+        backdrop-filter: none;
+        flex-direction: row;
+        gap: 20px;
+        left: 0;
+        padding: 0;
     }
 }
 
