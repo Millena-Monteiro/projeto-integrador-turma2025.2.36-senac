@@ -21,11 +21,15 @@ const swiper = new Swiper('.mySwiper', {
     observeParents: true,
 });
 
-function loadHeader() {
-    fetch('components/header.html')
-        .then(response => response.text())
+function loadComponent(id, path, callback) {
+    fetch(path)
+    .then(response => {
+        if (!response.ok) throw new Error("Não encontrou o arquivo no caminho: " + path);
+        return response.text();
+    })
         .then(data => {
-            document.getElementById('header-placeholder').innerHTML = data;
+            const container = document.getElementById(id);
+        if (container) container.innerHTML = data;
             
             if (typeof initHeaderScroll === "function") {
                 initHeaderScroll();
@@ -70,6 +74,7 @@ function loadHeader() {
                     }
                 });
             }
+            if (callback) callback();
         });
 }
-loadHeader();
+loadComponent('header-placeholder', 'components/header.html');
