@@ -26,6 +26,14 @@ function loadHeader() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header-placeholder').innerHTML = data;
+            
+            if (typeof initHeaderScroll === "function") {
+                initHeaderScroll();
+            }
+
+            if (typeof initMobileMenu === "function") {
+                initMobileMenu();
+            }
 
             const btn = document.getElementById('hamburger');
             const menu = document.getElementById('nav-menu');

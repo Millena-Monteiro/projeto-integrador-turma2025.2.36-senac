@@ -2,6 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+body, h1, h2, h3, p, a {
+    font-family: 'Montserrat', sans-serif !important;
+}
+h1, h2 {
+    font-weight: 900 !important;
+    letter-spacing: -1px;
+}
+
 .hero-section {
     position:relative;
     height: 100vh;
@@ -577,7 +585,7 @@ html {
         visibility: hidden !important;
     }
 
-    /* O Menu Lateral Transparente*/
+    /* Menu Lateral Transparente*/
     .navbar {
         display: none !important; 
         position: fixed;
@@ -746,16 +754,16 @@ html {
 /* VERSÃO DESKTOP */
 @media (min-width: 993px) {
     .header-container {
-        justify-content: space-between; /* Logo na esquerda, Nav na direita */
+        justify-content: space-between;
     }
 
     .menu-hamburger {
-        display: none; /* Some completamente no PC */
+        display: none;
     }
 
     .navbar {
         display: flex;
-        position: static; /* Volta para a posição normal do fluxo */
+        position: static;
         width: auto;
         height: auto;
         background: none;
