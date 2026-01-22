@@ -1,0 +1,350 @@
+/* HEADER - LOGÍSTICA*/
+section {  
+    font-family: 'Montserrat', sans-serif; 
+    min-height: auto !important;
+}
+
+#header-placeholder {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#header-placeholder .header-container {
+    position: relative !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border-bottom: none !important;
+    padding: 40px 8% !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#header-placeholder a {
+        color: #12ff46 !important;
+        text-decoration: none !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 1rem !important;
+    }
+
+#header-placeholder nav ul li a:hover, 
+#header-placeholder .nav-links a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px #12ff46;
+}
+
+#header-placeholder .logo {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #12ff46 !important;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none !important;
+}
+
+/* SEÇÃO HERO - LOGÍSTICA */
+
+.logistica-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 8% 80px;
+    background-color: #011e11; 
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 500px;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    color: white !important;
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+/* A Pílula Verde */
+.text-pill {
+    background-color: #12ff46 !important;
+    border-radius: 100px !important;
+    padding: 45px 50px !important;
+    max-width: 550px;
+    display: inline-block;
+}
+
+.text-pill p {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #000000 !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
+    text-align: center;
+    margin: 0 !important;
+}
+
+/* ÁREA DA IMAGEM E ASTERISCO */
+
+.hero-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.asterisk-icon {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200px !important;
+    color: #12ff46;
+    font-weight: 900;
+    position: absolute;
+    left: -100px;
+    z-index: 10;
+    line-height: 0;
+}
+
+.image-wrapper {
+    position: relative;
+    z-index: 5;
+    transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+}
+
+.image-wrapper img {
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 60px rgba(18, 255, 70, 0.4);
+    display: block;
+}
+
+main {
+    margin-top: 0 !important;
+}
+
+/* CONFIGURAÇÃO GERAL DE SEÇÕES */
+section {
+    padding: 80px 8%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SEÇÃO CASES */
+.cases-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cases-header h2 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.cases-header p {
+    color: black;
+    font-weight: 600;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.case-card {
+    background: #12ff46;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+    color: #000;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.case-link {
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* SEÇÃO ALIMENTOS */
+.food-donation-section {
+    background-color: #ffde00;
+    color: #000;
+    
+}
+
+.donation-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donation-image img {
+    width: 450px;
+    border-radius: 10px;
+    transform: rotate(-2deg);
+}
+
+.donation-text h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.steps-grid {
+    margin: 30px 0;
+    display: grid;
+    gap: 20px;
+}
+
+.step-item strong {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.learn-more {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* SEÇÃO AMARELA */
+.donation-section { background-color: #FFDE00; color: #000; }
+.container-flex { display: flex; align-items: center; gap: 50px; max-width: 1200px; margin: 0 auto; }
+.photo-tilt { width: 450px; border-radius: 5px; transform: rotate(-2deg); box-shadow: 10px 10px 0px rgba(0,0,0,0.05); }
+
+.italic-title { font-size: 2.2rem; font-weight: 900; font-style: italic; margin-bottom: 20px; line-height: 1.1; }
+.step-item { display: flex; margin-bottom: 20px; align-items: flex-start; }
+.step-title { font-weight: 900; min-width: 150px; font-size: 1.1rem; }
+.step-desc { font-size: 0.95rem; }
+
+/* SEÇÃO VERDE (SUA CASA) */
+.home-cycle-section { background-color: #011E11; color: #FFF; text-align: center; }
+.neon-title { color: #12FF46; font-size: 2.5rem; font-weight: 900; margin-bottom: 20px; }
+.subtitle { max-width: 800px; margin: 0 auto 50px; font-weight: 600; line-height: 1.4; }
+
+.cards-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.mini-card { width: 400px; border-radius: 10px; overflow: hidden; }
+.mini-card img { width: 100%; height: 250px; object-fit: cover; }
+
+.card-footer { background-color: #12FF46; color: #000; padding: 25px; min-height: 180px; display: flex; flex-direction: column; justify-content: space-between; }
+.card-footer h3 { font-weight: 900; font-size: 1.3rem; }
+.card-footer p { font-size: 0.9rem; margin: 10px 0; font-weight: 600; }
+.card-footer a { font-weight: 800; font-size: 0.75rem; color: #000; text-decoration: underline; }
+
+/* SEÇÃO APPS */
+.apps-section {
+    padding: 60px 8% !important;
+    background-color: #fff;
+    text-align: center;
+}
+
+.apps-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #011e11;
+}
+
+.apps-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #011e11;
+}
+
+.apps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.app-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* O CÍRCULO */
+.circle-frame {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #FFDE00;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.circle-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo dos textos e links */
+.app-card h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.app-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.app-link {
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #000;
+    text-decoration: underline;
+}
