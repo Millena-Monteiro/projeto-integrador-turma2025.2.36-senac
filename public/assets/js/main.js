@@ -77,4 +77,4 @@ function loadComponent(id, path, callback) {
             if (callback) callback();
         });
 }
-loadComponent('header-placeholder', 'components/header.html');
+loadComponent('header-placeholder', '/components/header.html');
