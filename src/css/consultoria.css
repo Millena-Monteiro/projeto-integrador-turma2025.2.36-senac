@@ -1,0 +1,121 @@
+.agendamento-section {
+  background-color: #24292e;
+  padding: 120px 0;
+  color: white;
+  min-height: 100vh;
+}
+
+.agendamento-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.agendamento-info h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 20px 0;
+  letter-spacing: -1px;
+}
+
+.beneficios-lista {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.beneficios-lista li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+}
+
+.beneficios-lista i {
+  color: #12ff46;
+}
+
+/* CARD DO FORMULÁRIO */
+.form-container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 40px;
+  color: #011e11;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 15px;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #12ff46;
+  outline: none;
+  background-color: #fafff7;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 18px;
+  background-color: #011e11;
+  color: #12ff46;
+  border: none;
+  border-radius: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #12ff46;
+  color: #011e11;
+  box-shadow: 0 10px 20px rgba(18, 255, 70, 0.3);
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+  .agendamento-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .form-container {
+    padding: 30px;
+  }
+}
