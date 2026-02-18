@@ -1,5 +1,5 @@
-import "/src/css/header.css";
-import "/src/css/style.css";
+import "../css/header.css";
+import "../css/style.css";
 import { renderHeader, setupMenu } from "./header.js";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
