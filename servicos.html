@@ -1,209 +1,332 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">      
-    <link rel="stylesheet" href="assets/css/logistica.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+        <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="/src/css/logistica.css" />
     <title>RenovaCiclo</title>
-</head>
-<style>
-    /* 1. ESTILO PARA A LOGO (MAIOR) */
-    #header-placeholder .logo {
-        color: #12ff46 !important;
-        font-family: 'Montserrat', sans-serif !important;
-        font-weight: 900 !important;
-        font-size: 2rem !important; /* Aumentado de 1.5 para 2rem */
-        text-decoration: none !important;
-        letter-spacing: -1px;
-    }
+  </head>
 
-    /* 2. ESTILO PARA OS LINKS DO MENU (MENORES) */
-    #header-placeholder .nav-links a, 
-    #header-placeholder li a {
-        color: #12ff46 !important;
-        text-decoration: none !important;
-        font-family: 'Montserrat', sans-serif !important;
-        font-weight: 700 !important;
-        font-size: 0.95rem !important; /* Tamanho menor para dar contraste com a logo */
-        margin-left: 25px;
-        text-transform: none;
-    }
+  <body>
+    <div id="header-placeholder"></div>
 
-</style>
+    <!--SEÇÃO PRINCIPAL-->
+    <section class="logistica-hero">
+      <div class="hero-content">
+        <h1 data-aos="fade-right">Logística Reversa</h1>
+        <h2 data-aos="fade-right" data-aos-delay="200">
+          Sua gestão de resíduos nunca foi tão
+          <span class="text-white">inteligente e humana.</span>
+        </h2>
 
-<body>
-    <div id="header-placeholder"></div> 
-    <main>
-        <section class="logistica-hero">
-    <div class="hero-content">
-        <h1>Logística Reversa: O Ciclo que Alimenta o Futuro.</h1>
-        
-        <div class="text-pill">
-            <p>
-                MUITO ALÉM DE RECICLAR EMBALAGENS, A LOGÍSTICA REVERSA É A INTELIGÊNCIA DE DEVOLVER À VIDA O QUE ANTES ERA DESCARTADO. DO SETOR CORPORATIVO À SUA COZINHA, ENSINAMOS COMO TRANSFORMAR O DESPERDÍCIO EM RECURSO.
-            </p>
+        <div class="text-pill" data-aos="fade-up" data-aos-delay="400">
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+            Na Renovaciclo, usamos inteligência logística e Supply Chain para
+            transformar desperdícios em recursos para Maceió. Com triagem e
+            tratamento rigorosos, convertemos excedentes orgânicos em ração para
+            animais desabrigados, reduzindo custos e gerando impacto social
+            sustentável.
+          </p>
+
+          <div class="hero-btns" data-aos="zoom-in" data-aos-delay="600">
+            <a href="#consultoria" class="btn-pill-link">Agendar Consultoria</a>
+            <span class="separator">|</span>
+            <a href="#fluxo" class="btn-pill-link">Conhecer o Ciclo</a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="hero-image">
-        <span class="asterisk-icon">*</span>
+      <div class="hero-image">
         <div class="image-wrapper">
-            <img src="/assets/img/logisticsImage/logistica-reversa.jpg" alt="Mãos segurando ciclo infinito">
+          <img
+            src="/assets/img/logisticsImage/logistica-reversa.jpg"
+            alt="Mãos segurando ciclo infinito"
+          />
         </div>
-    </div>
-</section>
-</main>
+      </div>
+    </section>
 
-<section class="cases-section">
-    <div class="cases-header">
-        <h2>Gigantes que Inspiram o Ciclo.</h2>
-        <p>Como grandes marcas usam a logística para salvar o planeta e gerar valor.</p>
-    </div>
+    <!-- SEÇÃO METODOLOGIAS DE LOGISTICA -->
+    <section class="logistica-metodologia">
+      <div class="container">
+        <div class="metodologia-grid">
+          <div class="metodologia-text" data-aos="fade-right">
+            <span class="tagline">EFICIÊNCIA OPERACIONAL</span>
+            <h2>
+              Sincronizando o <span class="text-neon">Supply Chain</span> com o
+              Impacto Social
+            </h2>
+            <p>
+              Não apenas coletamos resíduos; aplicamos metodologias de ponta
+              para garantir que cada grama de excedente seja processada com
+              agilidade e segurança técnica.
+            </p>
 
-    <div class="cases-grid">
-        <div class="case-card">
-            <div class="card-image">
-                <img src="/assets/img/logisticsImage/Amazon-Img.jpg" alt="Amazon">
+            <div class="metodologia-cards-small">
+              <div class="m-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Just in Time</h4>
+                  <p>Coletas programadas para evitar a degradação orgânica.</p>
+                </div>
+              </div>
+              <div class="m-card">
+                <i class="fas fa-chart-line"></i>
+                <div>
+                  <h4>Curva ABC</h4>
+                  <p>
+                    Priorização inteligente de parceiros por volume e valor
+                    nutricional.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="card-content">
-                <h3>Eficiência</h3>
-                <p>Com o programa Frustration-Free Packaging, a Amazon eliminou mais de 1 milhão de toneladas de embalagens e criou um ecossistema onde produtos devolvidos são reprocessados.</p>
-                <a href="https://sustainability.aboutamazon.com/waste/packaging" class="case-link">Fonte: Sustentabilidade Amazon</a>
+
+            <a href="https://wa.me/SEUNUMERO" class="btn-modern primary">
+              Agendar Consultoria <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="metodologia-visual" data-aos="fade-left">
+            <div class="img-container">
+              <img
+                src="/assets/img/logisticsImage/inteligencia-logistica-img.jpg"
+                alt="Inteligência Logística"
+              />
+              <div class="floating-badge">Alta Eficiência</div>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div class="case-card">
-            <div class="card-image">
-                <img src="/assets/img/logisticsImage/Natura-Img.jpg" alt="Natura">
-            </div>
-            <div class="card-content">
-                <h3>Sustentabilidade Brasileira</h3>
-                <p>Referência mundial, a Natura recupera anualmente toneladas de embalagens pós-consumo, transformando frascos vazios em novos produtos e renda para cooperativas.</p>
-                <a href="https://www.natura.com.br/c/logistica-reversa" class="case-link">Fonte: Logística Reversa Natura</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="food-donation-section">
-    <div class="donation-container">
-        <div class="donation-image">
-            <img src="/assets/img/logisticsImage/Pet-img.jpg" alt="Cuidado Animal">
-        </div>
-        <div class="donation-text">
-            <h2>Do Comércio para a ONG: Nutrição sem Desperdício</h2>
-            <h3>Sistema de Triagem, Processamento e Logística Maceió – AL</h3>
-            <p>Nosso Objetivo é transformar resíduos alimentares não aptos ao consumo humano, mas ainda nutricionalmente aproveitáveis, em ração segura e nutritiva para animais de ONGs e abrigos, reduzindo:</p>
-            <ul class="objetivo-lista">
-                <li>Desperdício de alimentos</li>
-                <li>custos operacionais das ONGs</li>
-                <li>Impacto ambiental em Maceió</li>
-            </ul>
-    </div>
-</section>
-
-<section class="home-cycle-section" data-aos="fade-up">
-    <div class="section-header">
-        <h2 class="neon-title">Sua Casa, Seu Pequeno Ciclo</h2>
-        <p class="subtitle">A mudança começa na pia da cozinha. Aprenda a técnica dos chefs para aproveitar o alimento de ponta a ponta e como criar adubo vivo no seu quintal ou apartamento.</p>
-    </div>
-
-    <div class="cards-grid">
-        <div class="mini-card" data-aos="zoom-in" data-aos-delay="100">
-            <img src="/assets/img/logisticsImage/Panelinha-img.webp" alt="Aproveitamento Total">
-            <div class="card-footer">
-                <h3>Aproveitamento Total</h3>
-                <p>Como usar talos, sementes e cascas de forma nutritiva e saborosa.</p>
-                <a href="https://panelinha.com.br/home/reaproveitamento">Link: Panelinha (Rita Lobo) - Aproveitamento de Alimento</a>
-            </div>
-        </div>
-
-        <div class="mini-card" data-aos="zoom-in" data-aos-delay="300">
-            <img src="/assets/img/logisticsImage/Compostagem-img.jpg" alt="Compostagem">
-            <div class="card-footer">
-                <h3>Compostagem Caseira</h3>
-                <p>Guia rápido para transformar orgânicos em terra fértil.</p>
-                <a href="https://cepagro.org.br/?p=17213&gad_source=1&gad_campaignid=20223057783&gbraid=0AAAAAo7JnN0DeW7mByWxnMiABKKS4ZOJe&gclid=CjwKCAiAj8LLBhAkEiwAJjbY7xpQgRU9i1bEX3RpJCOuRzhvmJjwcs5JcGslFi7c8iT_50v0eu6DEhoCvDoQAvD_BwE">Link: Blog Ciclo Orgânico - Guia de Compostagem</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="apps-section" data-aos="fade-up">
-    <div class="section-header">
-        <h2 class="apps-title">Ferramentas para sua Mudança</h2>
-        <p class="apps-subtitle">Aplicativos que conectam você ao consumo consciente e economizam seu dinheiro.</p>
-    </div>
-
-    <div class="apps-grid">
-        <div class="app-card" data-aos="zoom-in" data-aos-delay="100">
-            <div class="circle-frame">
-                <img src="/assets/img/logisticsImage/FoodToSave-Img.jpg" alt="Logo Food To Save">
-            </div>
-            <h4>Food To Save</h4>
-            <p>Salve alimentos de restaurantes com até 70% de desconto.</p>
-            <a href="https://www.foodtosave.com.br/" target="_blank" class="app-link">Link: Food To Save</a>
+    <!-- NOSSA LOGISTICA -->
+    <section id="fluxo-racao" class="fluxo-transformacao">
+      <div class="container">
+        <div class="section-header-central">
+          <span class="tagline">O CICLO DA RAÇÃO</span>
+          <h2>Do Comércio para a ONG</h2>
+          <p>
+            Um sistema rigoroso que garante nutrição segura e desperdício zero.
+          </p>
         </div>
 
-        <div class="app-card" data-aos="zoom-in" data-aos-delay="300">
-            <div class="circle-frame">
-                <img src="/assets/img/logisticsImage/Cataki-img.jpg" alt="Logo Cataki">
+        <div class="timeline-wrapper">
+          <div class="timeline-svg-line"></div>
+
+          <div class="timeline-grid-z">
+            <div class="timeline-step up" data-aos="fade-up">
+              <div class="step-icon">01</div>
+              <div class="step-box">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h4>Doação</h4>
+                <p>Captação em mercados, padarias e restaurantes.</p>
+              </div>
             </div>
-            <h4>Cataki</h4>
-            <p>Conecta você com catadores de recicláveis. É a logística reversa social mais poderosa que temos.</p>
-            <a href="https://www.cataki.org/" target="_blank" class="app-link">Link: Cataki</a>
+
+            <div class="timeline-step down" data-aos="fade-down">
+              <div class="step-icon">02</div>
+              <div class="step-box">
+                <i class="fas fa-truck"></i>
+                <h4>Coleta</h4>
+                <p>Rotas inteligentes divididas por zonas em Maceió.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step up" data-aos="fade-up">
+              <div class="step-icon">03</div>
+              <div class="step-box">
+                <i class="fas fa-microscope"></i>
+                <h4>Triagem</h4>
+                <p>Análise sensorial e nutricional rigorosa.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step down" data-aos="fade-down">
+              <div class="step-icon">04</div>
+              <div class="step-box">
+                <i class="fas fa-fire-alt"></i>
+                <h4>Tratamento</h4>
+                <p>Higienização e cozimento térmico (Ecofeed).</p>
+              </div>
+            </div>
+
+            <div class="timeline-step up" data-aos="fade-up">
+              <div class="step-icon">05</div>
+              <div class="step-box">
+                <i class="fas fa-blender"></i>
+                <h4>Processamento</h4>
+                <p>Trituração e mistura balanceada.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step down" data-aos="fade-down">
+              <div class="step-icon">06</div>
+              <div class="step-box">
+                <i class="fas fa-box"></i>
+                <h4>Armazenagem</h4>
+                <p>Controle de lote em ambiente ventilado.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step up" data-aos="fade-up">
+              <div class="step-icon">07</div>
+              <div class="step-box">
+                <i class="fas fa-clipboard-list"></i>
+                <h4>Cadastro</h4>
+                <p>Priorização de ONGs invisibilizadas.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step down" data-aos="fade-down">
+              <div class="step-icon">08</div>
+              <div class="step-box">
+                <i class="fas fa-shipping-fast"></i>
+                <h4>Distribuição</h4>
+                <p>Entregas programadas para os abrigos.</p>
+              </div>
+            </div>
+
+            <div class="timeline-step up" data-aos="fade-up">
+              <div class="step-icon">09</div>
+              <div class="step-box">
+                <i class="fas fa-chart-pie"></i>
+                <h4>Impacto</h4>
+                <p>Monitoramento e relatórios de sustentabilidade.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO Call to Action -->
+    <section class="colaboradores-section">
+      <div class="container">
+        <div class="section-header-central">
+          <span class="tagline">FAÇA PARTE DO CICLO</span>
+          <h2>Como você deseja colaborar?</h2>
+          <p>
+            Escolha seu perfil e ajude a transformar a logística reversa de
+            Maceió.
+          </p>
         </div>
 
-        <div class="app-card" data-aos="zoom-in" data-aos-delay="500">
-            <div class="circle-frame">
-                <img src="/assets/img/logisticsImage/Refood-img.jpg" alt="Logo Refood">
+        <div class="colab-grid">
+          <div class="colab-card" data-aos="fade-up">
+            <div class="colab-icon-box">
+              <i class="fas fa-building"></i>
             </div>
-            <h4>Refood</h4>
-            <p>Ponte entre o excesso e a necessidade.</p>
-            <a href="https://re-food.org/" target="_blank" class="app-link">Link: Refood</a>
+            <h3>Seja um Doador</h3>
+            <p>
+              Para mercados, restaurantes e padarias que desejam destinar seus
+              excedentes de forma inteligente.
+            </p>
+            <a href="contato.html?tipo=doador" class="btn-modern primary"
+              >Quero Doar</a
+            >
+          </div>
+
+          <div class="colab-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="colab-icon-box">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Seja Voluntário</h3>
+            <p>
+              Contribua com seu tempo na nossa central de triagem ou auxilie na
+              logística das rotas.
+            </p>
+            <a href="contato.html?tipo=voluntario" class="btn-modern dark"
+              >Candidatar-se</a
+            >
+          </div>
+
+          <div class="colab-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="colab-icon-box">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>Trabalhe Conosco</h3>
+            <p>
+              Venha aplicar seus conhecimentos de vendas e logística em um
+              negócio de impacto real.
+            </p>
+            <a href="vagas.html" class="btn-modern secondary">Ver Vagas</a>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="sobre" class="info-section">
-    <div class="info-container">
-        <div class="info-text-box" data-aos="fade-right" data-aos-duration="1200">
-            <h2 class="info-title">Sobre o Projeto</h2>
-            
-            <div class="info-description">
-                <p>Este projeto nasceu da necessidade de repensar o ciclo dos resíduos orgânicos em Maceió. Nossa solução foca na transformação do desperdício em oportunidade, unindo sustentabilidade ambiental e apoio social através da produção de ração animal.</p>
-                <p data-aos="fade-up" data-aos-delay="400">Desenvolvido como parte do Projeto Integrador do curso (Aprendizagem em vendas) no SENAC Alagoas, este site representa a materialização de meses de pesquisa e desenvolvimento técnico, visando aplicar conceitos de logística verde e economia circular na nossa região.</p>
-            </div>
+    <!-- SOBRE -->
+    <section id="sobre" class="info-section">
+      <div class="info-container">
+        <div
+          class="info-text-box"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <h2 class="info-title">Sobre o Projeto</h2>
 
-            <div class="info-team" data-aos="fade-up" data-aos-delay="600">
-                <h3>EQUIPE</h3>
-                <p><strong>Millena Monteiro</strong> – Pesquisa & Lead Developer</p>
-                <p><strong>Paulo Henrique</strong> – Colaboração na Visão Estética e pesquisa.</p>
-            </div>
+          <div class="info-description">
+            <p>
+              Este projeto nasceu da necessidade de repensar o ciclo dos
+              resíduos orgânicos em Maceió. Nossa solução foca na transformação
+              do desperdício em oportunidade, unindo sustentabilidade ambiental
+              e apoio social através da produção de ração animal.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Desenvolvido como parte do Projeto Integrador do curso
+              (Aprendizagem em vendas) no SENAC Alagoas, este site representa a
+              materialização de meses de pesquisa e desenvolvimento técnico,
+              visando aplicar conceitos de logística verde e economia circular
+              na nossa região.
+            </p>
+          </div>
 
-            <a href="contato.html" class="btn-contato" data-aos="zoom-in" data-aos-delay="800">CONTATE-NOS</a>
+          <div class="info-team" data-aos="fade-up" data-aos-delay="600">
+            <h3>EQUIPE</h3>
+            <p><strong>Millena Monteiro</strong> – Pesquisa & Lead Developer</p>
+            <p>
+              <strong>Paulo Henrique</strong> – Colaboração na Visão Estética e
+              pesquisa.
+            </p>
+          </div>
+
+          <a
+            href="contato.html"
+            class="btn-contato"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            >CONTATE-NOS</a
+          >
         </div>
 
-        <div class="info-image-wrapper" data-aos="fade-left" data-aos-duration="1500">
-            <div class="image-pill">
-                <img src="/assets/img/HomeImage/Sustainability in Business.jpg" alt="Sustentabilidade">
-            </div>
-            <div class="glow-effect" data-aos="zoom-out" data-aos-delay="1000"></div>
+        <div
+          class="info-image-wrapper"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <div class="image-pill">
+            <img
+              src="/assets/img/HomeImage/Sustainability in Business.jpg"
+              alt="Sustentabilidade"
+            />
+          </div>
+          <div
+            class="glow-effect"
+            data-aos="zoom-out"
+            data-aos-delay="1000"
+          ></div>
         </div>
-    </div>
-</section>
-    
-<script type="module" src="/assets/js/main.js"></script>
- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true,
-    offset: 120
-  });
-  </script>
-</body>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
