@@ -1,260 +1,538 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RenovaCiclo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-</head>
-<body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <div id="header-placeholder"></div>
 
+    <!-- SEÇÃO HERO -->
     <main>
-        <section class="hero-section">
-            <div class="hero-content">
-                <p class="hero-subtitle" data-aos="fade-down" data-aos-duration="1000">ENTREGA SUSTENTÁVEL: TRANSFORMANDO EXCESSO EM IMPACTOS POSITIVOS</p>
-                <h1 class="hero-title" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1200">Reutilize,<br>Reduza<br>E multiplique<br>o futuro.</h1>
-            </div>
-            <span class="hero-tagline" data-aos="zoom-in" data-aos-delay="400">Juntos para um presente suatentável.</span>
-        </section>
+      <section class="hero-section">
+        <div class="hero-content">
+          <p
+            class="hero-subtitle"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            ENTREGA SUSTENTÁVEL: TRANSFORMANDO EXCESSO EM IMPACTOS POSITIVOS
+          </p>
+          <h1
+            class="hero-title"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            Reutilize,<br />Reduza<br />E multiplique<br />o futuro.
+          </h1>
+        </div>
+        <span class="hero-tagline" data-aos="zoom-in" data-aos-delay="400"
+          >Juntos para um presente suatentável.</span
+        >
+      </section>
     </main>
 
-    <section class="legislacao-section">
-        <div class="container">
-            <h2 class="section-title">Base Normativa e Compromisso Legal</h2>
-
-            <div class="legislacao-grid">
-                <div class="leg-column">
-                    <div class="leg-item" data-aos="fade-up" data-aos-delay="200">
-                    <p>"Política Nacional de Resíduos Sólidos estabelece regras para o manejo e descarte correto, focando em logística reversa e responsabilidade compartilhada."<p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm" target="_blank" class="law-tag">- Lei nº 12.305/2010 - planalto.gov.br</a>
-                </div>
-
-                <div class="leg-item" data-aos="fade-up" data-aos-delay="400">
-                    <p>"O Código de Defesa do Consumidor protege os direitos dos consumidores, garantindo transparência e proibindo práticas abusivas nas relações de consumo."</p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank" class="law-tag">- Lei nº 8.078/1990 - planalto.gov.br</a>
-                </div>
-            </div>
-
-            <div class="vertical-divider"></div>
-
-            <div class="leg-column">
-                <div class="leg-item">
-                    <p>"A Lei da Ação Civil Pública protege interesses coletivos, permitindo ações judiciais para defender o meio ambiente e o patrimônio público."</p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm" target="_blank" class="law-tag">- Lei nº 7.347/1985 - planalto.gov.br</a>
-                </div>
-
-                <div class="leg-item">
-                    <p>"A Lei de Crimes Ambientais define punições para danos à natureza, responsabilizando pessoas e empresas por poluição ou desmatamento."</p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/leis/l9605.htm" target="_blank" class="law-tag">- Lei nº 9.605/1998 - planalto.gov.br</a>
-                </div>
-
-                <div class="leg-item">
-                    <p>"A Política Nacional sobre Mudanças Climáticas organiza as metas brasileiras para redução de gases estufa e incentivo à energia limpa."</p>
-                    <a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm" target="_blank" class="law-tag">- Lei nº 12.187/2009 - planalto.gov.br</a>
-                </div>
-
-            </div>
+    <!-- SEÇÃO IMPACTO EMPRESARIAL -->
+    <section class="business-impact">
+      <div class="container">
+        <div class="impacto-header" data-aos="fade-up">
+          <span class="impacto-title-principal"
+            >SOLUÇÕES PARA O SEU NEGÓCIO</span
+          >
+          <h2 class="impacto-subtitulo">
+            A Renovaciclo ajuda sua empresa a reduzir perdas, evitar multas e
+            fortalecer sua marca social.
+          </h2>
         </div>
+
+        <div class="impacto-grid">
+          <div class="impacto-card" data-aos="fade-up">
+            <div class="icon-box-modern">
+              <i class="fas fa-route"></i>
+            </div>
+            <h3>Consultoria Logística</h3>
+            <p>
+              Análise detalhada do fluxo de estoque para reduzir o volume de
+              perdas e otimizar o transporte de excedentes.
+            </p>
+            <a href="#" class="btn-modern secondary"
+              >Ver processos <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="impacto-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box-modern">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Transformação de Resíduos</h3>
+            <p>
+              Convertemos desperdício orgânico em matéria-prima para ração
+              animal de alta qualidade, fechando o ciclo.
+            </p>
+            <a href="/servicos.html#fluxo-racao" class="btn-modern dark"
+              >Saiba mais <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="impacto-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box-modern">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Conformidade Legal</h3>
+            <p>
+              Consultoria técnica para operar dentro das normas sanitárias,
+              evitando multas e custos operacionais.
+            </p>
+            <a href="/consultoria.html" class="btn-modern primary"
+              >Falar com consultor <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="maceio-section">
-    <div class="container maceio-flex">
-        
-        <div class="maceio-image-container" data-aos="fade-right">
-            <img src="/assets/img/HomeImage/VigilanciaSanitaria(1).png" alt="Vigilância Sanitária em Maceió" class="maceio-img">
-            <div class="maceio-badge">
-                <span>+750kg</span>
-                <p>apreendidos/semana</p>
-            </div>
-        </div>
+    <!-- SEÇÃO LEGISLAÇÃO -->
+    <section class="legislacao-section">
+      <div class="container">
+        <h2 class="section-title">Base Normativa e Compromisso Legal</h2>
 
-        <div class="maceio-content" data-aos="fade-left">
-            <h2 class="maceio-title">O Desafio em Maceió</h2>
-            
+        <div class="legislacao-grid">
+          <div class="leg-column">
+            <div class="leg-item" data-aos="fade-up" data-aos-delay="200">
+              <p>
+                "Política Nacional de Resíduos Sólidos estabelece regras para o
+                manejo e descarte correto, focando em logística reversa e
+                responsabilidade compartilhada."
+              </p>
+              <a
+                href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12305.htm"
+                target="_blank"
+                class="law-tag"
+                >- Lei nº 12.305/2010 - planalto.gov.br</a
+              >
+            </div>
+
+            <div class="leg-item" data-aos="fade-up" data-aos-delay="400">
+              <p>
+                "O Código de Defesa do Consumidor protege os direitos dos
+                consumidores, garantindo transparência e proibindo práticas
+                abusivas nas relações de consumo."
+              </p>
+              <a
+                href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+                target="_blank"
+                class="law-tag"
+                >- Lei nº 8.078/1990 - planalto.gov.br</a
+              >
+            </div>
+          </div>
+          <div class="vertical-divider"></div>
+
+          <div class="leg-column">
+            <div class="leg-item" data-aos="fade-up">
+              <p>
+                "A Lei da Ação Civil Pública protege interesses coletivos,
+                permitindo ações judiciais para defender o meio ambiente e o
+                patrimônio público."
+              </p>
+              <a
+                href="https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm"
+                target="_blank"
+                class="law-tag"
+                >- Lei nº 7.347/1985 - planalto.gov.br</a
+              >
+            </div>
+
+            <div class="leg-item" data-aos="fade-up">
+              <p>
+                "A Lei de Crimes Ambientais define punições para danos à
+                natureza, responsabilizando pessoas e empresas por poluição ou
+                desmatamento."
+              </p>
+              <a
+                href="https://www.planalto.gov.br/ccivil_03/leis/l9605.htm"
+                target="_blank"
+                class="law-tag"
+                >- Lei nº 9.605/1998 - planalto.gov.br</a
+              >
+            </div>
+
+            <div class="leg-item" data-aos="fade-up">
+              <p>
+                "A Política Nacional sobre Mudanças Climáticas organiza as metas
+                brasileiras para redução de gases estufa e incentivo à energia
+                limpa."
+              </p>
+              <a
+                href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm"
+                target="_blank"
+                class="law-tag"
+                >- Lei nº 12.187/2009 - planalto.gov.br</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DESAFIO (MACEIÓ) -->
+    <section class="maceio-section">
+      <div class="container">
+        <h2 class="maceio-title" data-aos="fade-down">O Desafio em Maceió</h2>
+
+        <div class="maceio-flex">
+          <div class="maceio-image-container" data-aos="fade-right">
+            <img
+              src="/assets/img/HomeImage/VigilanciaSanitaria(1).png"
+              alt="Vigilância Sanitária em Maceió"
+              class="maceio-img"
+            />
+            <div class="maceio-badge">
+              <span>250 - 750kg</span>
+              <p>por operação fiscalizada</p>
+            </div>
+          </div>
+
+          <div class="maceio-content-wrapper" data-aos="fade-left">
             <div class="maceio-item">
-                <h3><i class="fas fa-exclamation-triangle"></i> Fiscalização Sanitária</h3>
-                <p>A Vigilância Sanitária (Visa) realiza fiscalizações frequentes em feiras e supermercados. O resultado é alarmante: <strong>centenas de quilos de alimentos</strong> (carnes, laticínios e pães) são apreendidos semanalmente por estarem impróprios para o consumo.</p>
+              <h3>
+                <i class="fas fa-exclamation-circle"></i> O Volume das
+                Apreensões
+              </h3>
+              <p>
+                Analisando as operações da Vigilância Sanitária em Maceió,
+                observa-se que em grandes fiscalizações (como em feiras e
+                grandes redes), o volume de apreensões varia entre
+                <strong>250 kg e 750 kg por ação</strong>. <br /><br />
+                Essa oscilação evidencia falhas críticas na gestão de estoques e
+                armazenamento, transformando toneladas de recursos em resíduos
+                sólidos todos os meses.
+                <br />
+                <a
+                  href="https://g1.globo.com/al/alagoas/noticia/2026/01/26/vigilancia-sanitaria-apreende-580-kg-de-alimentos-vencidos-ha-tres-anos-em-mercado-do-jacintinho.ghtml"
+                  target="_blank"
+                  class="ref-link"
+                >
+                  <i class="fas fa-external-link-alt"></i> Exemplo de Operação
+                  (580kg)
+                </a>
+              </p>
             </div>
 
             <div class="maceio-item highlight">
-                <h3><i class="fas fa-hands-helping"></i> Fiscalização e Doação</h3>
-                <p>Em parceria com o <strong>Mesa Brasil Sesc</strong>, alimentos que estão fora do padrão de comercialização, mas ainda aptos para o consumo, são coletados e destinados a instituições sociais, transformando desperdício em solidariedade.</p>
+              <h3>
+                <i class="fas fa-hands-helping"></i> Fiscalização e Doação
+              </h3>
+              <p>
+                Em parceria com o <strong>Mesa Brasil Sesc</strong>, alimentos
+                fora do padrão de comercialização, mas aptos para consumo, são
+                destinados a instituições sociais.
+                <br />
+                <a
+                  href="https://www.sescalagoas.com.br/assistencia/mesa-brasil"
+                  target="_blank"
+                  class="ref-link"
+                  >Conheça o Mesa Brasil</a
+                >
+              </p>
             </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- SEÇÃO SOLUÇÃO -->
+    <section class="solucao-section">
+      <div class="luz-verde luz-1"></div>
+      <div class="luz-verde luz-2"></div>
+      <div class="luz-verde luz-3"></div>
+      <div class="star-deco deco-1">*</div>
+      <div class="star-deco deco-2">*</div>
 
-<section class="solucao-section">
-    <div class="luz-verde luz-1"></div>
-    <div class="luz-verde luz-2"></div>
-    <div class="luz-verde luz-3"></div>
-    <div class="star-deco deco-1">*</div>
-    <div class="star-deco deco-2">*</div>
-
-    <div class="solucao-wrapper">
+      <div class="solucao-wrapper">
         <h2 class="main-title">Transformar desperdício em ração animal</h2>
-        <hr class="title-line">
-        
+        <hr class="title-line" />
+
         <p class="intro-text">
-           A proposta é introduzir um sistema de reciclagem e reaproveitamento dos resíduos orgânicos (frutas, vegetais, pães, carnes, etc. – após tratamento sanitário adequado) descartados por supermercados e atacadistas, transformando-os em ração animal de qualidade.
+          A proposta é introduzir um sistema de reciclagem e reaproveitamento
+          dos resíduos orgânicos (frutas, vegetais, pães, carnes, etc. – após
+          tratamento sanitário adequado) descartados por supermercados e
+          atacadistas, transformando-os em ração animal de qualidade.
         </p>
 
         <h3 class="beneficios-label">Benefícios para Maceió:</h3>
 
-        <div class="swiper-container-relative"> 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    
-                    <div class="swiper-slide">
-                        <div class="card-industrial" data-aos="flip-left" data-aos-delay="100">
-                            <div class="circle-image">
-                                <img src="/assets/img/HomeImage/solucao-section-img/custo-beneficio.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <h4>Custo-benefício</h4>
-                                <p>Fonte de ração mais barata para pequenos produtores rurais e cooperativas locais.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-industrial" data-aos="flip-left" data-aos-delay="300">
-                            <div class="circle-image">
-                                <img src="/assets/img/HomeImage/solucao-section-img/Cachorrinhos-image.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <h4>Apoio a ONGs de Animais</h4>
-                                <p>Parte dessa ração pode ser destinada a abrigos e ONGs protetoras de animais.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-industrial" data-aos="flip-left" data-aos-delay="100">
-                            <div class="circle-image">
-                                <img src="/assets/img/HomeImage/solucao-section-img/emprego-image.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <h4>Geração de Emprego</h4>
-                                <p>Cria oportunidades em coleta, triagem, tratamento e fabricação da ração, expandindo a cadeia verde de reciclagem.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-industrial" data-aos="flip-left" data-aos-delay="300">
-                            <div class="circle-image">
-                                <img src="/assets/img/HomeImage/solucao-section-img/Ração-Animal.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <h4>Segurança Nutricional</h4>
-                                <p>A ração resultante é rica em proteínas e nutrientes, sendo um insumo de alto valor.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-industrial" data-aos="flip-left" data-aos-delay="100">
-                            <div class="circle-image">
-                                <img src="/assets/img/HomeImage/solucao-section-img/Desenvolvimento-Sustentavel-ilustration.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <h4>Desenvolvimento Sustentável</h4>
-                                <p>Reduz drasticamente o envio de lixo orgânico ao aterro, diminuindo custos de manejo e a emissão de metano. A iniciativa alinha Maceió aos princípios da Economia Circular.</p>
-                            </div>
-                        </div>
-                    </div>
-
+        <div class="swiper-container-relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="card-industrial"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div class="circle-image">
+                    <img
+                      src="/assets/img/HomeImage/solucao-section-img/custo-beneficio.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h4>Custo-benefício</h4>
+                    <p>
+                      Fonte de ração mais barata para pequenos produtores rurais
+                      e cooperativas locais.
+                    </p>
+                  </div>
                 </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="card-industrial"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div class="circle-image">
+                    <img
+                      src="/assets/img/HomeImage/solucao-section-img/Cachorrinhos-image.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h4>Apoio a ONGs de Animais</h4>
+                    <p>
+                      Parte dessa ração pode ser destinada a abrigos e ONGs
+                      protetoras de animais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="card-industrial"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div class="circle-image">
+                    <img
+                      src="/assets/img/HomeImage/solucao-section-img/emprego-image.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h4>Geração de Emprego</h4>
+                    <p>
+                      Cria oportunidades em coleta, triagem, tratamento e
+                      fabricação da ração, expandindo a cadeia verde de
+                      reciclagem.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="card-industrial"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div class="circle-image">
+                    <img
+                      src="/assets/img/HomeImage/solucao-section-img/Ração-Animal.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h4>Segurança Nutricional</h4>
+                    <p>
+                      A ração resultante é rica em proteínas e nutrientes, sendo
+                      um insumo de alto valor.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="card-industrial"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div class="circle-image">
+                    <img
+                      src="/assets/img/HomeImage/solucao-section-img/Desenvolvimento-Sustentavel-ilustration.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-content">
+                    <h4>Desenvolvimento Sustentável</h4>
+                    <p>
+                      Reduz drasticamente o envio de lixo orgânico ao aterro,
+                      diminuindo custos de manejo e a emissão de metano. A
+                      iniciativa alinha Maceió aos princípios da Economia
+                      Circular.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
+          </div>
+          <!--swiper slides-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="sucesso-section">
-    <div class="sucesso-wrapper">
-        <h2 class="sucesso-main-title">Exemplos de Sucesso no Brasil e no Mundo</h2>
-        
+    <!-- SEÇÃO EXEMPLOS DE SUCESSO -->
+    <section class="sucesso-section">
+      <div class="sucesso-wrapper">
+        <h2 class="sucesso-main-title">
+          Exemplos de Sucesso no Brasil e no Mundo
+        </h2>
+
         <div class="sucesso-grid">
-            <div class="sucesso-card" data-aos="fade-up" data-aos-delay="100">
-                <h3>Japão - Ecofeed</h3>
-                <div class="sucesso-img-container">
-                    <img src="/assets/img/HomeImage/reciclagem-japao.jpg" alt="Processo Ecofeed Japão">
-                </div>
-                <div class="sucesso-content">
-                    <p>Empresas japonesas já transformam sobras de alimentos em uma ração ecológica chamada ecofeed, produzida por um processo de fermentação.</p>
-                    <p>A ração custa metade do preço da convencional e diminui emissões de gases poluentes.</p>
-                    <a href="https://changemakr.asia/japan-recycles-food-waste-into-livestock-feed-through-fermentation/" class="btn-saiba-mais">Saiba Mais</a>
-                </div>
+          <div class="sucesso-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Japão - Ecofeed</h3>
+            <div class="sucesso-img-container">
+              <img
+                src="/assets/img/HomeImage/reciclagem-japao.jpg"
+                alt="Processo Ecofeed Japão"
+              />
             </div>
+            <div class="sucesso-content">
+              <p>
+                Empresas japonesas já transformam sobras de alimentos em uma
+                ração ecológica chamada ecofeed, produzida por um processo de
+                fermentação.
+              </p>
+              <p>
+                A ração custa metade do preço da convencional e diminui emissões
+                de gases poluentes.
+              </p>
+              <a
+                href="https://changemakr.asia/japan-recycles-food-waste-into-livestock-feed-through-fermentation/"
+                class="btn-saiba-mais"
+                >Saiba Mais</a
+              >
+            </div>
+          </div>
 
-            <div class="sucesso-card" data-aos="fade-up" data-aos-delay="400">
-                <h3>Brasil - Reciclagem Animal</h3>
-                <div class="sucesso-img-container">
-                    <img src="/assets/img/HomeImage/ilustração-eco.jpg" alt="Reciclagem Animal Brasil">
-                </div>
-                <div class="sucesso-content">
-                    <p>A indústria brasileira já recicla cerca de 14 milhões de toneladas de resíduos de abatedouros em farinhas e gorduras para aves e suínos.</p>
-                    <p>Essa prática reduz o custo da ração em até 5% e evita contaminação ambiental.</p>
-                    <a href="https://interligados.canalrural.com.br/suinocultura/reciclagem-animal-sustentabilidade-racao/" class="btn-saiba-mais">Saiba Mais</a>
-                </div>
+          <div class="sucesso-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Brasil - Reciclagem Animal</h3>
+            <div class="sucesso-img-container">
+              <img
+                src="/assets/img/HomeImage/ilustração-eco.jpg"
+                alt="Reciclagem Animal Brasil"
+              />
             </div>
+            <div class="sucesso-content">
+              <p>
+                A indústria brasileira já recicla cerca de 14 milhões de
+                toneladas de resíduos de abatedouros em farinhas e gorduras para
+                aves e suínos.
+              </p>
+              <p>
+                Essa prática reduz o custo da ração em até 5% e evita
+                contaminação ambiental.
+              </p>
+              <a
+                href="https://interligados.canalrural.com.br/suinocultura/reciclagem-animal-sustentabilidade-racao/"
+                class="btn-saiba-mais"
+                >Saiba Mais</a
+              >
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section id="sobre" class="info-section">
-    <div class="info-container">
-        <div class="info-text-box" data-aos="fade-right" data-aos-duration="1200">
-            <h2 class="info-title">Sobre o Projeto</h2>
-            
-            <div class="info-description">
-                <p>Este projeto nasceu da necessidade de repensar o ciclo dos resíduos orgânicos em Maceió. Nossa solução foca na transformação do desperdício em oportunidade, unindo sustentabilidade ambiental e apoio social através da produção de ração animal.</p>
-                <p data-aos="fade-up" data-aos-delay="400">Desenvolvido como parte do Projeto Integrador do curso (Aprendizagem em vendas) no SENAC Alagoas, este site representa a materialização de meses de pesquisa e desenvolvimento técnico, visando aplicar conceitos de logística verde e economia circular na nossa região.</p>
-            </div>
+    <!-- SOBRE -->
+    <section id="sobre" class="info-section">
+      <div class="info-container">
+        <div
+          class="info-text-box"
+          data-aos="fade-right"
+          data-aos-duration="1200"
+        >
+          <h2 class="info-title">Sobre o Projeto</h2>
 
-            <div class="info-team" data-aos="fade-up" data-aos-delay="600">
-                <h3>EQUIPE</h3>
-                <p><strong>Millena Monteiro</strong> – Pesquisa & Lead Developer</p>
-                <p><strong>Paulo Henrique</strong> – Colaboração na Visão Estética e pesquisa.</p>
-            </div>
+          <div class="info-description">
+            <p>
+              Este projeto nasceu da necessidade de repensar o ciclo dos
+              resíduos orgânicos em Maceió. Nossa solução foca na transformação
+              do desperdício em oportunidade, unindo sustentabilidade ambiental
+              e apoio social através da produção de ração animal.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="400">
+              Desenvolvido como parte do Projeto Integrador do curso
+              (Aprendizagem em vendas) no SENAC Alagoas, este site representa a
+              materialização de meses de pesquisa e desenvolvimento técnico,
+              visando aplicar conceitos de logística verde e economia circular
+              na nossa região.
+            </p>
+          </div>
 
-            <a href="contato.html" class="btn-contato" data-aos="zoom-in" data-aos-delay="800">CONTATE-NOS</a>
+          <div class="info-team" data-aos="fade-up" data-aos-delay="600">
+            <h3>EQUIPE</h3>
+            <p><strong>Millena Monteiro</strong> – Pesquisa & Lead Developer</p>
+            <p>
+              <strong>Paulo Henrique</strong> – Colaboração na Visão Estética e
+              pesquisa.
+            </p>
+          </div>
+
+          <a
+            href="contato.html"
+            class="btn-contato"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+            >CONTATE-NOS</a
+          >
         </div>
 
-        <div class="info-image-wrapper" data-aos="fade-left" data-aos-duration="1500">
-            <div class="image-pill">
-                <img src="/assets/img/HomeImage/Sustainability in Business.jpg" alt="Sustentabilidade">
-            </div>
-            <div class="glow-effect" data-aos="zoom-out" data-aos-delay="1000"></div>
+        <div
+          class="info-image-wrapper"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+        >
+          <div class="image-pill">
+            <img
+              src="/assets/img/HomeImage/Sustainability in Business.jpg"
+              alt="Sustentabilidade"
+            />
+          </div>
+          <div
+            class="glow-effect"
+            data-aos="zoom-out"
+            data-aos-delay="1000"
+          ></div>
         </div>
-    </div>
-</section>
-    
+      </div>
+    </section>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="module" src="/assets/js/main.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true, // A animação acontece só uma vez quando desce a página
-    offset: 120 // Animação começa 120px antes do elemento aparecer na tela
-  });
-</script>
-<a href="/logistica.html" style="display: none;">link para build</a>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
 </html>
