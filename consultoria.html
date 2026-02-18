@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RenovaCiclo</title>
+    <link rel="stylesheet" href="/src/css/consultoria.css" />
+  </head>
+  <body>
+    <div id="header-placeholder"></div>
+
+    <section class="agendamento-section">
+      <div class="container">
+        <div class="agendamento-wrapper">
+          <div class="agendamento-info" data-aos="fade-right">
+            <span class="tagline">CONSULTORIA ESPECIALIZADA</span>
+            <h1>
+              Otimize sua <br /><span class="text-neon"
+                >Gestão de Excedentes</span
+              >
+            </h1>
+            <p>
+              Nossa consultoria analisa seus processos atuais e implementa o
+              ciclo de logística reversa da Renovaciclo no seu negócio.
+            </p>
+
+            <ul class="beneficios-lista">
+              <li>
+                <i class="fas fa-check-circle"></i> Redução imediata de resíduos
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Relatórios de impacto
+                ambiental (ESG)
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Certificado de destinação
+                sustentável
+              </li>
+            </ul>
+          </div>
+
+          <div class="form-container" data-aos="fade-left">
+            <h3>Simular Agendamento</h3>
+            <form id="form-consultoria">
+              <div class="input-group">
+                <label>Nome do Responsável</label>
+                <input type="text" placeholder="Ex: José Carlos" required />
+              </div>
+
+              <div class="input-group">
+                <label>Empresa / Estabelecimento</label>
+                <input
+                  type="text"
+                  placeholder="Ex: Supermercado Central"
+                  required
+                />
+              </div>
+
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Tipo de Resíduo</label>
+                  <select>
+                    <option>Padaria / Panificados</option>
+                    <option>Frutas e Legumes (Hortifruti)</option>
+                    <option>Restaurante (Sobras Limpas)</option>
+                    <option>Outros</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label>Frequência de Coleta</label>
+                  <select>
+                    <option>Diária</option>
+                    <option>3x por semana</option>
+                    <option>Semanal</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label>Mensagem ou Observação</label>
+                <textarea
+                  placeholder="Conte-nos um pouco sobre seu desafio logístico..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                Solicitar Diagnóstico Gratuito
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
