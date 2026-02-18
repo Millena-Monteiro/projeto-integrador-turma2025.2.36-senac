@@ -1,0 +1,99 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px; /* Reduzi um pouco a altura para ser mais elegante */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  
+  /* Efeito Moderno: Fundo branco com 80% de opacidade e desfoque atrás */
+  background-color: rgba(255, 255, 255, 0.8); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  
+  z-index: 10000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Logo um pouco menor para acompanhar o header */
+#main-logo {
+  height: 70px; 
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+#main-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Menu com fonte arredondada (Montserrat) */
+#nav-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: #0b3d2e;
+  font-family: "Montserrat", sans-serif !important; /* Mesma fonte da Hero */
+  font-weight: 600;
+  font-size: 13px; /* Tamanho menor como solicitado */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+#nav-menu a:hover {
+  color: #27ae60;
+}
+
+/* Destaque para o botão de Consultoria */
+.btn-agendar {
+  background-color: #27ae60;
+  color: #fff !important;
+  padding: 8px 18px;
+  border-radius: 50px; /* Bordas bem arredondadas */
+  transition: background 0.3s ease !important;
+}
+
+.btn-agendar:hover {
+  background-color: #011e11;
+}
+
+/* Ajuste do botão hambúrguer */
+#hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0b3d2e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  #nav-menu.show {
+    display: flex;
+  }
+}
