@@ -1,0 +1,516 @@
+/* HEADER - LOGÍSTICA*/
+section {
+  font-family: "Montserrat", sans-serif;
+  min-height: auto !important;
+  padding: 80px 8%;
+}
+
+/* SEÇÃO HERO - LOGÍSTICA */
+
+.logistica-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 8% 80px;
+  background-color: #011e11;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-family: "Montserrat", sans-serif !important;
+  color: white !important;
+  font-size: 3rem !important;
+  font-weight: 900 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 40px;
+  letter-spacing: -2px;
+}
+
+.hero-content h2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+/* A Pílula Verde */
+.text-pill {
+  background-color: #12ff46 !important;
+  border-radius: 60px !important;
+  padding: 40px !important;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(18, 255, 70, 0.2);
+}
+
+.text-pill p {
+  font-family: "Montserrat", sans-serif !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 0.85rem !important;
+  line-height: 1.6 !important;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Estilização dos Links dentro da Pílula */
+.hero-btns {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn-pill-link {
+  color: #011e11;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #011e11;
+  transition: 0.3s;
+}
+.btn-pill-link:hover {
+  opacity: 0.7;
+  transform: translateY(-2px);
+}
+
+.separator {
+  color: #011e11;
+  font-weight: 900;
+}
+
+/* ÁREA DA IMAGEM */
+
+.hero-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 5;
+  transform: perspective(1000px) rotateY(-10deg) rotateX(5deg);
+}
+
+.image-wrapper img {
+  width: 500px;
+  border-radius: 25px;
+  box-shadow: 0 0 60px rgba(18, 255, 70, 0.4);
+  display: block;
+}
+
+main {
+  margin-top: 0 !important;
+}
+
+/* SEÇÃO METODOLOGIAS DE LOGISTICA */
+.logistica-metodologia {
+  background-color: #24292e;
+  padding: 100px 0;
+  color: white;
+}
+
+.metodologia-grid {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.metodologia-text {
+  flex: 1.2;
+}
+.metodologia-visual {
+  flex: 0.8;
+}
+
+.metodologia-text h2 {
+  font-size: 2.5rem;
+  margin: 15px 0 30px;
+  line-height: 1.2;
+}
+
+.metodologia-cards-small {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.m-card {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 20px;
+  border-left: 4px solid #12ff46;
+}
+
+.m-card i {
+  font-size: 1.5rem;
+  color: #12ff46;
+}
+
+.m-card h4 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+.m-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 30px;
+  filter: grayscale(0.5);
+}
+
+.floating-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: #12ff46;
+  color: #011e11;
+  padding: 20px;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.8rem;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(18, 255, 70, 0.3);
+}
+
+/* SEÇÃO NOSSA LOGISTICA */
+.fluxo-transformacao {
+  background-color: #011e11;
+  padding: 100px 0;
+  color: white;
+}
+
+.section-header-central {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.timeline-grid-z {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Estado Zigue-Zague */
+.timeline-step.up {
+  transform: translateY(-30px);
+}
+.timeline-step.down {
+  transform: translateY(30px);
+}
+
+/* Círculo do Número */
+.step-icon {
+  width: 35px;
+  height: 35px;
+  background: #12ff46;
+  color: #011e11;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 0.8rem;
+  margin-bottom: -15px;
+  z-index: 5;
+  box-shadow: 0 0 15px rgba(18, 255, 70, 0.5);
+}
+
+/* Card Estilo Gordinho e Achatado */
+.step-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(18, 255, 70, 0.2);
+  padding: 30px 20px;
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+  transition: 0.4s;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-box i {
+  font-size: 2rem;
+  color: #12ff46;
+  margin-bottom: 15px;
+}
+
+.step-box h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.step-box p {
+  font-size: 0.75rem;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Efeito Hover */
+.timeline-step:hover .step-box {
+  background: rgba(18, 255, 70, 0.05);
+  border-color: #12ff46;
+  box-shadow: 0 10px 30px rgba(18, 255, 70, 0.2);
+  transform: scale(1.05);
+}
+
+/* SEÇÃO Call to Action */
+.colaboradores-section {
+  padding: 100px 0;
+  background-color: #f4f7f5;
+  text-align: center;
+}
+
+.colab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.colab-card {
+  background: #ffffff;
+  padding: 50px 30px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease;
+  border: 1px solid #eee;
+}
+
+.colab-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(1, 30, 17, 0.1);
+  border-color: #12ff46;
+}
+
+/* Quadrado do Ícone no Card */
+.colab-icon-box {
+  width: 80px;
+  height: 80px;
+  background-color: #011e11;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.colab-icon-box i {
+  font-size: 2rem;
+  color: #12ff46;
+}
+
+.colab-card:hover .colab-icon-box {
+  background-color: #12ff46;
+}
+
+.colab-card:hover .colab-icon-box i {
+  color: #011e11;
+}
+
+.colab-card h3 {
+  color: #011e11;
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.colab-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+/* RESPONSIVIDADE COMPLETA */
+/* PARA TABLETS */
+@media (max-width: 1024px) {
+  .logistica-hero {
+    padding: 100px 5% 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .text-pill {
+    max-width: 90%;
+  }
+
+  .image-wrapper img {
+    width: 400px; /* Reduz um pouco a imagem */
+  }
+
+  .metodologia-grid {
+    gap: 40px;
+  }
+
+  .timeline-grid-z {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas no tablet */
+  }
+}
+
+/* CELULARES GRANDES */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 25px;
+  }
+
+  /* Hero */
+  .hero-content h1 {
+    font-size: 2.2rem !important;
+    letter-spacing: -1px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .text-pill {
+    padding: 30px 25px !important;
+    border-radius: 40px !important;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .separator {
+    display: none;
+  } /* Remove o "|" no mobile */
+
+  .asterisk-icon {
+    font-size: 120px !important;
+    left: -40px;
+    top: -20px;
+  }
+
+  .image-wrapper img {
+    width: 80%;
+    border-radius: 25px;
+    box-shadow: 0 0 50px rgba(18, 255, 70, 0.3);
+  }
+
+  /* Seção Metodologia B2B */
+  .metodologia-grid {
+    flex-direction: column;
+  }
+
+  .metodologia-text h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Tranforma o Fluxo Zigue-Zague em 2 colunas */
+  .timeline-grid-z {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .timeline-step.up,
+  .timeline-step.down {
+    transform: none; /* Remove o efeito zigue-zague no mobile */
+    margin-bottom: 20px;
+  }
+
+  .step-box {
+    min-height: 180px;
+    padding: 20px 15px;
+  }
+
+  /* Seção Colaboradores */
+  .colab-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* PARA CELULARES PEQUENOS */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem !important;
+  }
+
+  .text-pill p {
+    font-size: 0.75rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Aqui o Fluxo vira uma lista vertical única */
+  .timeline-grid-z {
+    grid-template-columns: 1fr;
+  }
+
+  .step-box {
+    min-height: auto;
+  }
+
+  .agendamento-wrapper {
+    gap: 30px;
+  }
+
+  .form-container {
+    padding: 25px 20px;
+    border-radius: 30px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+}
