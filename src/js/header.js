@@ -1,7 +1,11 @@
 export function renderHeader() {
   return `
     <header class="header">
+    <div class="logo">
+    <a href="index.html">
       <img id="main-logo" src="/assets/img/renovaciclo-logo-sem-fundo.png" alt="Logo">
+      </a>
+      </div>
 
       <nav id="nav-menu">
         <a href="/index.html">Home</a>
